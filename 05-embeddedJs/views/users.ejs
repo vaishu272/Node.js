@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users</title>
+
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <%- include("partials/header") %>
+
+    <div class="container center-content">
+
+        <h1>User Cards</h1>
+
+        <div class="card-container">
+            <% users.forEach((user) => { %>
+            <div class="card">
+                <h3><%= user.name %></h3>
+                <p>Age: <%= user.age %></p>
+                <p class="role">Role: <%= user.role %></p>
+            </div>
+            <% }) %>
+        </div>
+
+     <br />   
+     <br />   
+      <p>👉 <a href="/">Go back</a></p>
+    </div>
+
+  <%- include("partials/footer") %>
+
+</body>
+</html>

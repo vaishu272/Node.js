@@ -1,0 +1,124 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: white;
+  color: #1e293b;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #3a619f;
+  padding: 15px 0;
+}
+
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* FIXED NAV LINKS */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* MAIN */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* HEADINGS */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* CARDS GRID (FIXED) */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+/* CENTER CONTENT */
+.center-content {
+  text-align: center;
+}
+
+/* DESCRIPTION */
+.desc {
+  max-width: 600px;
+  margin: 10px auto 20px;
+  color: #475569;
+}
+
+/* LIST CENTER FIX */
+.center-content ul {
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* CARD ALIGNMENT */
+.card-container {
+  margin-top: 30px;
+}
+
+/* ROLE TEXT */
+.role {
+  color: #64748b;
+  margin-top: 5px;
+}
+
+/* LINKS */
+a {
+  color: #2563eb;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background: #e2e8f0;
+}

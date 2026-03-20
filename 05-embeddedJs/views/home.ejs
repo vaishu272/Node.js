@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EJS Concepts</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <%- include("partials/header") %>
+
+    <div class="container center-content">
+      <h1>EJS (Embedded JavaScript)</h1>
+
+      <p class="desc">
+        EJS is a templating engine used in Node.js to create dynamic HTML pages.
+        It allows you to embed JavaScript directly inside HTML.
+      </p>
+
+      <br />
+
+      <h2>Why Use EJS?</h2>
+      <ul>
+        <li>✔ Helps create dynamic web pages</li>
+        <li>✔ Easy to integrate with Express.js</li>
+        <li>✔ Allows reuse using partials (header/footer)</li>
+        <li>✔ Simple syntax (HTML + JavaScript)</li>
+      </ul>
+
+      <br />
+      <br />
+
+      <h2>Important EJS Concepts</h2>
+
+      <ul>
+        <li><strong>&lt;%= %&gt;</strong> → Output data (escaped, safe)</li>
+        <li><strong>&lt;%- %&gt;</strong> → Output raw HTML (unescaped)</li>
+        <li>
+          <strong>&lt;% %&gt;</strong> → JavaScript logic (loops, conditions)
+        </li>
+        <li>
+          <strong>Partials</strong> → Reusable components like header & footer
+        </li>
+        <li>
+          <strong>Includes</strong> → Use <code>&lt;%- include() %&gt;</code> to
+          reuse files
+        </li>
+      </ul>
+
+      <br />
+      <br />
+
+      <h2>Example Page</h2>
+      <p>👉 <a href="/users">View Users Example</a></p>
+    </div>
+
+    <%- include("partials/footer") %>
+  </body>
+</html>
