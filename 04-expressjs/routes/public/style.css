@@ -1,0 +1,91 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  color: #222;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Container (Main Card) */
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 650px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  color: #2b7cff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #444;
+  margin-top: 20px;
+}
+
+/* Text */
+p {
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Inputs */
+input {
+  padding: 12px;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 8px 0;
+  outline: none;
+}
+
+/* Button */
+button {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #2b7cff, #4da6ff);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Links */
+a {
+  color: #2b7cff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: #1a5edb;
+}
+
+/* Divider */
+hr {
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+}

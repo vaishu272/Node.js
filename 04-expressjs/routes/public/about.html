@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Express Concepts</title>
+
+    <link rel="stylesheet" href="/about.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>📘 Express Concepts Used</h1>
+
+      <p>
+        This project demonstrates core backend concepts using Express.js. These
+        are essential for building modern web applications.
+      </p>
+
+      <hr />
+
+      <div class="grid">
+        <!-- LEFT SIDE -->
+        <div class="card">
+          <h2>⚙️ Middleware</h2>
+          <p>
+            Middleware runs between request and response. Used for parsing data,
+            authentication, and logging.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>🌐 Routing</h2>
+          <p>
+            Routing defines how the server responds to different URLs like
+            /about, /contact, etc.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>🔗 Route Parameters</h2>
+          <p>Dynamic values passed in URL. Example: /profile/:username</p>
+        </div>
+
+        <div class="card">
+          <h2>🔍 Query Parameters</h2>
+          <p>Used for search/filtering. Example: /product?search=laptop</p>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="card">
+          <h2>📩 Form Handling (POST)</h2>
+          <p>
+            Used to send data from client to server. Access data using req.body.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>📁 Static Files</h2>
+          <p>Serve HTML, CSS, and images using express.static().</p>
+        </div>
+
+        <div class="card">
+          <h2>❌ 404 Handling</h2>
+          <p>Handles unknown routes and shows a custom error page.</p>
+        </div>
+
+        <div class="card">
+          <h2>🚀 Fetch API</h2>
+          <p>Used to fetch data from external APIs (like JSONPlaceholder).</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <p>
+        👉 This project combines frontend + backend concepts into a complete
+        Express.js application.
+      </p>
+
+      <a href="/">⬅ Back to Home</a>
+    </div>
+  </body>
+</html>
