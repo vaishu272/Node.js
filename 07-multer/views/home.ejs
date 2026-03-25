@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Upload</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #e5f9fe, #ecfbfb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 350px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      input[type="file"] {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        border: 2px solid black;
+        border-radius: 2px;
+        padding: 2px;
+      }
+
+      button {
+        background: #47b3c6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background: #2fbfcc;
+      }
+
+      .image-preview {
+        margin-top: 20px;
+      }
+
+      .image-preview img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Upload Image 📸</h2>
+
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required />
+        <br />
+        <button type="submit">Upload</button>
+      </form>
+
+      <% if (typeof imagePath !== 'undefined' && imagePath) { %>
+        <div class="image-preview">
+          <h3>Uploaded Image</h3>
+          <img src="<%= imagePath %>" />
+        </div>
+      <% } %>
+    </div>
+  </body>
+</html>
